@@ -1,10 +1,8 @@
 import asyncio
 import socketio
 import uvicorn
-
 from quart import Quart, jsonify
 from quart_cors import cors
-from dotenv import load_dotenv
 
 CORS_ALLOWED_ORIGINS = "*"
 
@@ -47,7 +45,7 @@ def create_app():
     app = QuartSIO()
 
     @app.route('/')
-    def hello():
+    async def hello():
         return '<h1>Hello, world!</h1>'
 
     from . import video
