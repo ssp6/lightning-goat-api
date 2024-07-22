@@ -1,0 +1,49 @@
+# Webstorm
+.idea
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+*.env
+
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform.lock.hcl
+
+# Local .env files
+.env
+
+# Ignore logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore backups
+*.backup
+
+# Ignore package files
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Uploads
+uploads/
