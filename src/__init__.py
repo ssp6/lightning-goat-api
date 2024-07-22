@@ -23,8 +23,6 @@ class QuartSIO:
         self.emit = self._sio.emit
         self.register_blueprint = self._quart_app.register_blueprint
         self._quart_app.errorhandler(Exception)(self.handle_exception)
-        # Load environment variables from .env file
-        load_dotenv()
 
     async def _run(self, host: str, port: int):
         try:
