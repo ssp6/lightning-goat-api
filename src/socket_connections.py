@@ -1,7 +1,7 @@
 import cv2
 from aiofiles import tempfile
 import aiofiles.os
-from quart import request, Blueprint
+from quart import Blueprint
 import io
 
 from src.libs.extract_user_id import extract_user_id_socket
